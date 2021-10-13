@@ -90,8 +90,8 @@ namespace Meadow.CLI.Core.Devices
                 {
                     Logger.LogTrace(ex, "Caught exception while waiting for device to be ready. Retrying.");
                 }
-
-                await Task.Delay(100, cancellationToken)
+                //ToDo: Adrian - review - increased delay from 100ms to 500ms
+                await Task.Delay(500, cancellationToken)
                           .ConfigureAwait(false);
             }
 
@@ -120,7 +120,7 @@ namespace Meadow.CLI.Core.Devices
 
             int retries = 15;
 
-            for(int i = 0; i < retries; i++)
+            for (int i = 0; i < retries; i++)
             {
                 try
                 {   //on Windows the port can be slow to release after disposing 

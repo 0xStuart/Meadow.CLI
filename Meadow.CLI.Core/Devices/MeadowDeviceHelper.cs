@@ -132,7 +132,7 @@ namespace Meadow.CLI.Core.Devices
                 await _meadowDevice.MonoDisableAsync(cancellationToken);
 
                 Logger.LogDebug("Waiting for Meadow to cycle");
-                await Task.Delay(1000, cancellationToken)
+                await Task.Delay(3000, cancellationToken)
                           .ConfigureAwait(false);
 
                 Logger.LogDebug("Re-initialize the device");
@@ -366,6 +366,8 @@ namespace Meadow.CLI.Core.Devices
                     await MonoDisableAsync(cancellationToken: cancellationToken)
                         .ConfigureAwait(false);
 
+                    await Task.Delay(2000);
+
                     // Again, verify that Mono is disabled
                     Trace.Assert(await _meadowDevice.GetMonoRunStateAsync(cancellationToken).ConfigureAwait(false) == false,
                                  "Meadow was expected to have Mono Disabled");
@@ -374,8 +376,12 @@ namespace Meadow.CLI.Core.Devices
                         runtimePath,
                         cancellationToken: cancellationToken);
 
+                    await Task.Delay(2000);
+
                     await ReInitializeMeadowAsync(cancellationToken)
                         .ConfigureAwait(false);
+
+                    await Task.Delay(2000);
                 }
                 else
                 {
@@ -397,6 +403,8 @@ namespace Meadow.CLI.Core.Devices
                     await _meadowDevice.ResetMeadowAsync(cancellationToken)
                                        .ConfigureAwait(false);
 
+                    await Task.Delay(3000);
+
                     await ReInitializeMeadowAsync(cancellationToken)
                         .ConfigureAwait(false);
                 }
@@ -409,7 +417,7 @@ namespace Meadow.CLI.Core.Devices
                 //await MonoEnableAsync(cancellationToken);
 
                 // This is to ensure the ESP info has updated in HCOM on the Meadow
-                await Task.Delay(2000, cancellationToken)
+                await Task.Delay(3000, cancellationToken)
                           .ConfigureAwait(false);
 
                 // TODO: Verify that the device info returns the expected version

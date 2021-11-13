@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using Meadow.CLI.Core.Devices;
 using Meadow.CLI.Core.Exceptions;
-using Meadow.CLI.Core.Logging;
 
 namespace Meadow.CLI.Core.DeviceManagement
 {

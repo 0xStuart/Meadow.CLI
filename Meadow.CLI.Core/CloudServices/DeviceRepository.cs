@@ -4,7 +4,6 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Meadow.CLI.Core.Identity;
-using Meadow.CLI.Core.Logging;
 
 namespace Meadow.CLI.Core.CloudServices
 {

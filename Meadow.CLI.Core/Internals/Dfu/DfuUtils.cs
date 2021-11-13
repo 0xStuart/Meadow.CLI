@@ -10,7 +10,6 @@ using LibUsbDotNet;
 using LibUsbDotNet.Main;
 
 using Meadow.CLI.Core.Exceptions;
-using Meadow.CLI.Core.Logging;
 
 namespace Meadow.CLI.Core.Internals.Dfu
 {

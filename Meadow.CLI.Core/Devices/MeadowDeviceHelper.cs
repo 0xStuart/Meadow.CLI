@@ -11,7 +11,6 @@ using Meadow.CLI.Core.DeviceManagement;
 using Meadow.CLI.Core.Exceptions;
 using Meadow.CLI.Core.Internals.Dfu;
 using Meadow.CLI.Core.Internals.MeadowCommunication.ReceiveClasses;
-using Meadow.CLI.Core.Logging;
 
 namespace Meadow.CLI.Core.Devices
 {

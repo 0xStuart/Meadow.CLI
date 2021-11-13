@@ -1,6 +1,4 @@
-﻿using Meadow.CLI.Core.Logging;
-
-using System;
+﻿using System;
 using System.IO;
 
 namespace Meadow.CLI.Core.Common

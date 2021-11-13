@@ -10,7 +10,6 @@ using System.Threading.Tasks;
 using Meadow.CLI.Core.DeviceManagement;
 using Meadow.CLI.Core.DeviceManagement.Tools;
 using Meadow.CLI.Core.Internals.MeadowCommunication.ReceiveClasses;
-using Meadow.CLI.Core.Logging;
 
 namespace Meadow.CLI.Core.Internals.MeadowCommunication
 {

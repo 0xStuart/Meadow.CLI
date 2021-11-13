@@ -9,7 +9,6 @@ using System.Threading;
 using System.Threading.Tasks;
 
 using Meadow.CLI.Core.Common;
-using Meadow.CLI.Core.Logging;
 
 namespace Meadow.CLI.Core
 {

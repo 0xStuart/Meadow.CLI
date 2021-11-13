@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 
 using Meadow.CLI.Core.DeviceManagement;
-using Meadow.CLI.Core.Logging;
 
 namespace Meadow.CLI.Core.Internals.MeadowCommunication.ReceiveClasses
 {

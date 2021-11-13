@@ -6,7 +6,6 @@ using System.Threading;
 using System.Threading.Tasks;
 using Meadow.CLI.Core.Internals.MeadowCommunication;
 using Meadow.CLI.Core;
-using Meadow.CLI.Core.Logging;
 
 namespace Meadow.CLI.Core.Devices
 {
